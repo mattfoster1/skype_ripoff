@@ -1,6 +1,7 @@
 html, body {
 	height: auto;
-	width: 99.5%;
+	width: 100%;
+	overflow-x: hidden;
 	background-color: white;
 	margin: 0px;
 	padding: 0px;
@@ -525,4 +526,10 @@ input:focus {
 
 #langLogo {
 	background-position: 0px -1213px;
+}
+
+@media screen and (max-height: 850px) {
+	#bgr {
+		padding-bottom: 7%;
+	}
 }
