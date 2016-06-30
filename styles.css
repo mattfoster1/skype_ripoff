@@ -1,0 +1,528 @@
+html, body {
+	height: auto;
+	width: 99.5%;
+	background-color: white;
+	margin: 0px;
+	padding: 0px;
+	
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+div, header, footer, nav, label, img {
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+	color: white;
+	/*font-size: 30px;*/
+	text-align: center;
+	font-family: helvetica;
+
+	-webkit-font-smoothing: antialiased;
+}
+
+label {
+	font-size: 12px;
+}
+
+ul {
+	list-style-type: none;
+	-webkit-padding-start: 0px;
+	margin: 0px;
+	justify-content: space-between;
+	/*height: 80%;*/
+}
+
+a {
+	/*color: white;*/
+	text-decoration: none;
+}
+
+#bgr {
+	background-color: white;
+	height: 95%;
+	width: auto;
+	text-align: center;
+	align-items: center;
+	/*justify-content: space-between;*/
+	flex-direction: column;
+	padding-bottom: 9%;
+
+}
+
+.pageTitle {
+	height: 70px;
+	width: 96%;
+	margin: 30px 0px;
+	align-items: center;
+	order: 2;
+	font-family: sFont;
+	font-size: 36px;
+	background-color: white;
+	color: black;
+}
+
+#form_container {
+	width: 80%;
+	height: 80%;
+}
+
+.form_item label {
+	color: rgb(51, 53, 52);
+	margin-bottom: 8px;
+	font-size: 14px;
+}
+
+input {
+	padding: 0px 9px;
+	height: 31px;
+	border: 1px solid rgb(0, 175, 240);
+	/*margin: 0px 4px;*/
+}
+
+input :focus {
+	border: 2px solid rgb(0, 175, 240);
+}
+
+#username, #password {
+	width: 260px;
+	/*border rgb(0, 175, 240)*/
+}
+
+#menuContainer {
+	background-color: white;
+	height: 67px;
+	width: 100%;
+	/*font-size: 0.7em;*/
+	align-items: center;
+	justify-content: space-between;
+	order: 1;
+}
+
+#menuLogo {
+	background: url(images/navigation_sprite.png) no-repeat 0px -435px;
+	width: 331px;
+	height: 146px;
+	margin: 0px 19px;
+
+	zoom: 0.3;
+    -moz-transform:scale(0.3);
+    -moz-transform-origin: 0 0;
+   	display: inline-flex;
+}
+
+#menuContainer a {
+	align-items: center;
+	display: flex;
+	padding: 0px 14px;
+}
+
+#menuContainer li {
+	display: inline-flex;
+}
+
+#leftMenuCont {
+	height: 65px;
+}
+
+.leftMenu {
+	left: 0%;
+	height: 100%;
+	display: flex;
+	vertical-align: middle;
+}
+
+.rightMenu {
+	left: 0%;
+}
+
+.rightMenu a {
+	font-size: 16px;
+	color: rgb(0, 120, 202);
+	font-family: sFont-r;
+}
+
+.rightMenu a:hover {
+	text-decoration: underline;
+}
+
+.navBtn {
+	font-size: 20px;
+	min-width: 60px;
+	/*border: 0.5px solid rgba(255,255,255,0.3);*/
+	/*padding: 0px 14px;*/
+	font-family: sFont-r;
+	justify-content: center;
+	color: #00aff0;
+	/*background-color: white;*/
+}
+
+.navBtn a {
+	color: rgb(0, 120, 202)
+}
+
+.navBtn:hover {
+	background-color: #00aff0;
+	color: white;
+}
+
+.navBtn a:hover {
+	color: white;
+}
+
+
+
+.altBtn {
+	padding: 0px 10px;
+	min-width: 40px;
+	/*border: 0.5px solid rgba(255,255,255,0.3);*/
+}
+
+@font-face {
+	font-family: sFont;
+	src: url(fonts/segoeuil.ttf);
+}
+
+@font-face {
+	font-family: sFont-SB;
+	src: url(fonts/seguisb.ttf);
+}
+
+@font-face {
+	font-family: sFont-r;
+	src: url(fonts/segoeui.ttf);
+}
+
+
+#footMenuContainer {
+	display: flex;
+	/*position: absolute;*/
+	align-self: flex-end;
+	width: 100%;
+	height: 390px;
+	bottom: 0px;
+	left: 0%;
+	border-top: 6px solid #00aff0;
+	color: #b0c5d1;
+	background-color: rgb(43, 84, 100);
+}
+
+#footMenuContainer a {
+	font-family: sFont-r;
+	font-size: 14px;
+	color: white;
+}
+
+#footMenuContainer a:hover{
+	text-decoration: underline;
+}
+
+#msoftLinks a {
+	display: inline-flex;
+	height: 20px;
+}
+
+.ftrBtn {
+	display: flex;
+	font-size: 12px;
+	left: 0%;
+	text-align: left;
+	/*padding-left: 10px;*/
+	margin-bottom: 10px;
+	flex-direction: row;
+	align-items: center;
+	/*justify-content: center;*/
+
+	width: 80%;
+	min-height: 30px;
+
+	/*border: 0.5px solid rgba(255,255,255,0.3);*/
+}
+
+.ftrDivs1 {
+	width: 33%;
+	font-family: helvetica;
+	margin-right: 10%;
+	/*height: 80%;*/
+}
+
+.ftrDivs2 {
+	width: 15%;
+	font-family: helvetica;
+	/*height: 80%;*/
+}
+
+#msoftLinks .ftrTitle {
+	margin: 30px 0px 12px 30px;
+}
+
+.ftrTitle {
+	font-size: 14px;
+	color: lightgray;
+	width: auto;
+	margin: 0px 0px 12px 0px;
+	font-family: sFont-SB;
+	color: #b0c5d1;
+	margin-top: 30px;
+}
+
+#aboutLinks, #skypeLinks, #socialLinks, #helpLinks {
+	flex-direction: column;
+	height: 368px;
+	margin: 0px 0px 0px 30px;
+}
+
+#aboutLinks li, #skypeLinks li, #socialLinks li, #helpLinks li {
+	margin: 0px;
+	min-height: 25px;
+	/*line-height: 18px;*/
+}
+
+#msoftLinks {
+	flex-direction: column;
+	height: 100%;
+}
+
+#msoftLinks ul, #lang_cont {
+	margin-left: 30px;
+}
+
+.ftrDivs2 {
+	height: 100%;
+}
+
+.form_item {
+	display: inline-block !important;
+	text-align: left;
+	line-height: 63%;
+	width: 100%;
+	height: 100px;
+}
+
+#icon {
+	/*needs URL for checkbox*/
+	/*needs onhover animation*/
+	height: 50px;
+	width: 50px;
+	display: none;
+}
+
+.checkbox {
+	width: 155px;
+	order: 2;
+	align-items: center;
+	position: relative;
+	font-size: 16px;
+	color: rgb(107, 108, 111);
+	font-family: sFont-r;
+	margin-left: 15px;
+}
+
+.checkbox_item {
+	flex-direction: row;
+	align-items: center;
+}
+
+input[type=checkbox]{
+    /*opacity: 0.5;*/
+    float: left;
+    width: 30px;
+    margin: 0px;
+    border: 0px;
+}
+
+#chkCont {
+	width: 30px;
+	height: 30px;
+}
+
+#chkCont input{
+	background: url('images/unchecked.png') no-repeat;
+	background-size: contain;
+	width: 30px;
+	height: 30px;
+	-webkit-appearance: none;
+}
+
+#chkCont input:checked{
+	background: url('images/checked.png') no-repeat;
+	background-size: contain;
+	width: 30px;
+	height: 30px;
+	-webkit-appearance: none;
+}
+
+input:focus {
+	outline: none;
+}
+
+
+.form_label {
+	width: 100%;
+}
+
+#signInCont {
+	width: 139px;
+	height: 47px;
+	border-radius: 50px;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	margin: 12px 0px;
+	background-color: rgb(127, 186, 0);
+}
+
+#signInBtn {
+	margin: 2px;
+	border-radius: 15px;
+	font-size: 20px;
+	font-family: sFont-r;
+	background: none;
+	color: white;
+	border-width: 0px;
+	padding-bottom: 5px;
+}
+
+#core {
+	width: 60%;
+	height: auto;
+	min-width: 300px;
+	min-height: 300px;
+	max-width: 800px;
+	max-height: 500px;
+	align-items: center;
+	align-self: flex-start;
+	order: 3;
+	background-color: white;
+	padding: 30px;
+}
+
+#coreFtrCont {
+	justify-content: space-between;
+
+}
+
+#coreFtrCont a {
+	color: rgb(0, 120, 202);
+	font-family: sFont-r;
+	font-size: 14px;
+	white-space: nowrap;
+}
+
+#coreFtrCont a:hover {
+	text-decoration: underline;
+}
+
+#ProbSI_txt, #SI_FB {
+	font-size: 12px;
+	margin: 0px 14px;
+	align-items: center;
+}
+
+#SI_FB {
+	/*width: 200px;*/
+	margin: 0px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+}
+
+#fbCont {
+	width: 200px;
+	align-items: center;
+	justify_content: flex-start;
+}
+
+#fbLogo {
+	background: url('images/icons_msa_facebook.png') no-repeat 0 -600px;
+	width: 808px;
+	height: 600px;
+	zoom: 0.03;
+    -moz-transform:scale(0.03);
+    -moz-transform-origin: 0 0;
+}
+
+#newAccountCont {
+	order: 4;
+	align-self: flex-start;
+	/*margin-left: 44px;*/
+	font-size: 14px;
+	font-family: sFont-r;
+	margin: 20px 0px 60px 44px;
+}
+
+#newAccountCont a {
+	color: rgb(0, 120, 202);
+}
+
+#newAccountCont a:hover {
+	text-decoration: underline;
+}
+
+#lang_cont {
+	/*position: relative;*/
+	width: 250px;
+	height: 30px;
+	bottom: 1%;
+	left: 1%;
+	font-size: 12px;
+	/*vertical-align: middle;*/
+}
+
+#msLogo, #ofcLogo, #sfcLogo, #wPhLogo, #xboxLogo, #bngLogo, #strLogo, #langLogo{
+	background-image: url('images/footer_sprite_ms.png');
+	background-repeat: no-repeat;
+	zoom: 0.2;
+    -moz-transform:scale(0.2);
+    -moz-transform-origin: 0 0;
+   	display: inline-flex;
+   	width: 135px;
+   	height: 136px;
+   	margin-right: 95px;
+}
+
+#msLogo {
+	background-position: 0px -404px;
+}
+
+#ofcLogo {
+	width: 135px;
+	height: 163px;
+	background-position: 0px -606px;	
+}
+
+#sfcLogo {
+	width: 136px;
+	height: 99px;
+	background-position: -202px -1011px;
+}
+
+#wPhLogo {
+	background-position: 0px -808px;
+}
+
+#xboxLogo {
+	background-position: -202px -404px;
+}
+
+#bngLogo {
+	height: 169px;
+	background-position: -202px -607px;
+}
+
+#strLogo {
+	width: 141px;
+	background-position: -202px -808px;
+}
+
+#langLogo {
+	background-position: 0px -1213px;
+}
