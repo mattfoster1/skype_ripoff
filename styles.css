@@ -12,7 +12,7 @@ html, body {
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 body {
@@ -78,8 +78,9 @@ a {
 
 #form_container {
 	width: 100%;
-	height: 80%;
-	padding: 30px 0px 40px 30px;
+	/*height: 80%;*/
+	height: 365px;
+	padding: 0px 0px 20px 30px;
 }
 
 .form_item label {
@@ -401,14 +402,16 @@ input:focus {
 
 #core {
 	width: 600px;
-	height: auto;
+	height: 575px;
 	min-width: 300px;
 	min-height: 300px;
 	max-width: 800px;
-	max-height: 500px;
+	/*max-height: 600px;*/
+	letter-spacing: 0.1px;
 	
 	align-self: flex-start;
 	flex-direction: column;
+	justify-content: space-between;
 	order: 3;
 	background-color: white;
 	/*padding: 30px;*/
@@ -428,6 +431,34 @@ input:focus {
 
 #coreFtrCont a:hover {
 	text-decoration: underline;
+}
+
+#blueCont {
+	width: 90%;
+	height: 65px;
+	padding: 30px;
+}
+
+#blue {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(228, 247, 254);
+	align-items: center;
+}
+
+#infoTit {
+	color: rgb(70, 70, 70);
+	padding: 1px 0px 0px 15px;
+}
+
+#infoIcon {
+	background: url('images/misc_elements_sprite.png') no-repeat -350px -2379px;
+	width: 230px;
+	height: 231px;
+	zoom: 0.1;
+	-moz-transform:scale(0.03);
+    -moz-transform-origin: 0 0;
+    margin-left: 110px;
 }
 
 #ProbSI_txt, #SI_FB {
@@ -466,6 +497,7 @@ input:focus {
 	font-family: sFont-r;
 	
 	width: 100%;
+	height: 65px;
 	border-top: 1px solid rgb(235, 235, 235);
 }
 
@@ -558,15 +590,14 @@ input:focus {
 @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0){
 	
 	html, body {
-		/*height: 150%;*/
-		height: 1067px;
-		justify-content: flex-start;
+		height: 1200px;
+		/*justify-content: flex-start;*/
 	}
 
 
 	#bgr {
 		min-height: 670px;
-		padding-bottom: 0px;
+		padding-bottom: 55px;
 		height: 40%;
 	}
 
